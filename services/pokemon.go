@@ -1,6 +1,6 @@
 package services
 
-import "github.com/pokeapi/models"
+import "github.com/awize/pokeapi/models"
 
 // GetPokemon handler
 func GetPokemon(pokemonID int) (models.Pokemon, error) {

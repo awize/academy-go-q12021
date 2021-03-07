@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/awize/pokeapi/controllers"
 	"github.com/julienschmidt/httprouter"
-	"github.com/pokeapi/controllers"
 )
 
 // StartApp give us the main router

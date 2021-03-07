@@ -1,6 +1,6 @@
 package main
 
-import "github.com/pokeapi/app"
+import "github.com/awize/pokeapi/app"
 
 func main() {
 	app.StartApp()

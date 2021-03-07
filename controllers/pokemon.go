@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/awize/pokeapi/services"
 	"github.com/julienschmidt/httprouter"
-	"github.com/pokeapi/services"
 )
 
 // GetPokemons retrieves all pokemons
