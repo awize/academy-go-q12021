@@ -4,6 +4,7 @@ import (
 	"encoding/csv"
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 )
@@ -11,7 +12,7 @@ import (
 // GetPokemons get pokemons hash
 func GetPokemons() (map[int]Pokemon, error) {
 	pwd, _ := os.Getwd()
-	file, err := os.Open(pwd + "/assets/poke_list.csv")
+	file, err := os.Open(filepath.Join(pwd, "../assets/poke_list.csv"))
 	if err != nil {
 		return nil, fmt.Errorf("failed opening file because: %s", err.Error())
 	}
